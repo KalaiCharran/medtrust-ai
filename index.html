@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="light scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedTrust AI – Zero-Trust, AI-Powered Patient Health Data Network</title>
+  
+  <!-- Meta & SEO -->
+  <meta name="description" content="A patient-centric healthcare platform where patients own their medical data, medical records are verified for authenticity, organizations receive only the minimum necessary information, and all access is temporary, transparent, and auditable." />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              900: '#0c4a6e'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./src/styles/app.css" />
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen selection:bg-sky-100 selection:text-sky-900 antialiased font-sans">
+  
+  <!-- App Root Mount Point -->
+  <div id="app"></div>
+
+  <!-- Master ES Module Entry -->
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
